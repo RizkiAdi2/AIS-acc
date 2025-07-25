@@ -16,7 +16,7 @@ class DashboardController extends Controller
         // Misalnya, Anda bisa menampilkan total users, order, dsb.
 
         $totalUsers = \App\Models\User::count();
-        // $totalOrders = \App\Models\Order::count();
+        $totalOrders = 0; // Set default value for now
 
         // Menyediakan data untuk view dashboard
         return view('dashboard', compact('totalUsers', 'totalOrders'));

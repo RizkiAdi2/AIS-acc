@@ -67,7 +67,7 @@ Then, run the following in the Tinker shell:
 $user = new App\Models\User;
 $user->name = 'manager';
 $user->email = 'manager@gmail.com';
-$user->password = bcrypt('123');
+$user->password = bcrypt ('123');
 $user->save();
 ```
 
